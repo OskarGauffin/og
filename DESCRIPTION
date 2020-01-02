@@ -1,0 +1,14 @@
+Package: og
+Type: Package
+Title: og
+Version: 0.0.1
+Date: 2020-01-02
+Author: Oskar Gauffin
+Description: A small helper package
+URL: https://github.com/oskargauffin/og
+BugReports: https://github.com/oskargauffin/og/issues
+Depends:
+Imports:
+License: Apache License 2.0
+RoxygenNote: 7.0.0
+Encoding: UTF-8
