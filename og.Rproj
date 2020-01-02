@@ -11,7 +11,10 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: XeLaTeX
+<<<<<<< HEAD
 
 BuildType: Package
 PackageUseDevtools: Yes
 PackageInstallArgs: --no-multiarch --with-keep.source
+=======
+>>>>>>> 02d8533eefbc3ec30191f9b40dd3b092d5a88541

@@ -22,3 +22,4 @@ column_to_vec <- function(){
   names <- capture.output(dput(readClipboard()))
   writeClipboard(names)
 }
+
