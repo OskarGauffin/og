@@ -23,3 +23,4 @@ column_to_vec <- function(){
   writeClipboard(names)
 }
 
+
