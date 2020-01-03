@@ -12,9 +12,9 @@
 #' # C
 # 
 # # Run:
-# rows_to_vec()
+# og::column_to_vec()
 # 
-# # Press CTRL + V:
+# # Press CTRL + V and you should have:
 # c("A", "B", "C")
 #'
 #' @export

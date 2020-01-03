@@ -1,4 +1,4 @@
-#' @title file_choose
+#' @title file.choose
 #' Inserts the selected string into the clipboard
 #'
 #' @description
@@ -7,10 +7,10 @@
 #' @return
 #' Prints the selected string
 #' 
-#' file_choose()
+#' file.choose()
 #'
 #' @export
-file_choose <- function(){
+file.choose <- function(){
   path <- gsub("\\", "/", base::file.choose(), fixed=T)
   clipboard_path <- paste0('"', path,'"')
   writeClipboard(clipboard_path)
