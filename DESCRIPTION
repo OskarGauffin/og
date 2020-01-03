@@ -4,10 +4,11 @@ Title: og
 Version: 0.0.1
 Date: 2020-01-02
 Author: Oskar Gauffin
+Maintainer: Oskar Gauffin <oskar.gauffin@hotmail.com>
 Description: A small helper package
 URL: https://github.com/oskargauffin/og
 BugReports: https://github.com/oskargauffin/og/issues
-Depends:
+Depends: utils
 Imports:
 License: Apache License 2.0
 RoxygenNote: 7.0.0
