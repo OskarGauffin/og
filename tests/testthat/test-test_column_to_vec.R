@@ -5,8 +5,7 @@ test_that("test column_to_vec", {
     column_to_vec()
     readClipboard()
   }
-  
-  skip_on_travis("column_to_vec only works on windows")
+  skip_on_travis(message='column_to_vec only works on windows')
   expect_equal(test(), 'c(\"A\", \"B\", \"C\")')
   
 })
