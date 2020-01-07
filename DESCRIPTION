@@ -8,7 +8,7 @@ Maintainer: Oskar Gauffin <oskar.gauffin@hotmail.com>
 Description: A small helper package
 URL: https://github.com/oskargauffin/og
 BugReports: https://github.com/oskargauffin/og/issues
-Depends: utils
+Depends: utils, stringr
 License: Apache License 2.0
 RoxygenNote: 7.0.0
 Encoding: UTF-8
