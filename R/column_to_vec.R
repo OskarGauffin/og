@@ -20,5 +20,6 @@
 #' @export
 column_to_vec <- function(){
   names <- capture.output(dput(readClipboard()))
+  names <- trimws(names)
   writeClipboard(names)
 }
