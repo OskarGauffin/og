@@ -21,5 +21,5 @@
 column_to_vec <- function(){
   names <- capture.output(dput(readClipboard()))
   names <- stringr::str_trim(names)
-  writeClipboard(names)
+  utils::writeClipboard(names)
 }

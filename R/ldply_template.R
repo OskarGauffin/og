@@ -8,8 +8,6 @@
 #'
 #' @return
 #' Nothing
-#' 
-#' ldply_template("test")
 #'
 #'
 #' @export
