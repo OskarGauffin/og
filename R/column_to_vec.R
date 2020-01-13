@@ -19,7 +19,7 @@
 #'
 #' @export
 column_to_vec <- function(){
-  names <- capture.output(dput(readClipboard()))
+  names <- utils::capture.output(dput(readClipboard()))
   names <- stringr::str_trim(names)
   utils::writeClipboard(names)
 }
