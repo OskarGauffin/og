@@ -7,6 +7,9 @@ Installs and loads my favourite packages}
 \usage{
 library_packages(package_vec = NULL)
 }
+\arguments{
+\item{package_vec}{Provide the function with custom packages to install and load. Default is "plyr", "dplyr", "magrittr", "data.table", "stringr" and "lubridate".}
+}
 \value{
 Nothing
 

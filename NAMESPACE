@@ -2,4 +2,5 @@
 
 export(column_to_vec)
 export(file.choose)
+export(ldply_template)
 export(library_packages)
