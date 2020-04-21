@@ -15,13 +15,12 @@ sql_temptable_template <- function(temptable_name=NULL){
   
   # Copy the skeleton 
   output <- "
-  DROP TABLE IF EXISTS #tt;
-  GO
-  
-  with tt as (
-  -- Insert sql-code here
-)
-select * into #tt from tt;"
+sqlQuery(conn, 'DROP TABLE IF EXISTS #tt;')
+
+sqlQuery(conn,   
+  'SELECT * INTO #tt (
+  -- Insert SQL-code here
+) a_name_for_the_subquery')"
 
 # Render the split-variable if provided
 if(!is.null(temptable_name)){
