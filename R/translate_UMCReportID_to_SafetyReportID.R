@@ -34,13 +34,19 @@ safety_report_ids <- unique(c(safety_report_ids$SafetyReportID,
 }
 
 ####################################################
-# If we still don't find all IDs we give an error
+# If we still don't find all IDs we give a warning
 ####################################################
 if(length(unique(safety_report_ids)) != length(unique(umc_report_ids))) {
-  stop(cat("The number of found unique SafetyReportIDs don't match the length of the unique
+  warning(cat("The number of found unique SafetyReportIDs don't match the length of the unique
   number of UMCReportIDs (SafetyReportIDs: ", length(unique(safety_report_ids)), ", UMCReportIDs: ",length(unique(umc_report_ids)), ")"))
 }
   
+# Provide the output to the clipboard
+writeClipboard(safety_report_ids)
+og::column_to_vec()
+readClipboard()
+
+# Also return it
 safety_report_ids
 }
 
