@@ -23,12 +23,12 @@ WHERE fu.ReplacedReportID in ('", paste0(report_ids_to_update, collapse="', '"),
   # If there was any updates
   if(nrow(report_ids_df)>0){
   # Here are the updated ones
-  updated <- unique(report_ids_df$ReportID[ReplacedReportID %in% report_ids_df])
-  
-  # Here are the non-updated ones
-  not_updated <- unique(report_ids_df$ReportID[! report_ids %in% ReplacedReportID])
-  
-  all_report_ids <- unique(c(updated, not_updated))
+    updated <- unique(report_ids_df$ReportID[report_ids_df$ReplacedReportID %in% 
+                                               report_ids_to_update])
+  # And the non-updated ones
+    not_updated <- unique(report_ids_to_update[!report_ids_to_update %in% 
+                                                 report_ids_df$ReplacedReportID])
+    all_report_ids <- unique(c(updated, not_updated))
   } 
   
   # No updates found:
@@ -47,7 +47,7 @@ WHERE fu.ReplacedReportID in ('", paste0(report_ids_to_update, collapse="', '"),
   }
   
   # Provide the output to the clipboard
-  writeClipboard(all_report_ids)
+  writeClipboard(as.character(all_report_ids))
   og::column_to_vec()
   readClipboard()
   
