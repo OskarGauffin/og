@@ -1,6 +1,7 @@
 # og
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.org/OskarGauffin/og.svg?branch=master)](https://travis-ci.org/OskarGauffin/og)
+[![Codecov test coverage](https://codecov.io/gh/OskarGauffin/og/branch/master/graph/badge.svg)](https://app.codecov.io/gh/OskarGauffin/og?branch=master)
 <!-- badges: end -->
 
 Provides four convenient functions which requires clipboard compatibility from the utils package, i.e. windows.
